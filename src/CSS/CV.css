@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #031341;
+    color: white;
+    margin: 16px;
+}
+
+.name{
+    font-size: 20pt;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: 0px;
+    
+    border-bottom: 2px solid #94aeae;
+    
+}
+
+
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger span{
+display: block;
+height: 4px;
+background: white;
+border-radius: 5px;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1) ;
+}
+
+.menu li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu li a{
+    color:black;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    text-decoration: underline 1px white;
+    text-underline-offset: 6px;
+}
+
+.menu.show{
+    visibility: visible;
+}
+
+.cv{
+    text-decoration: underline 1px white;
+    text-underline-offset: 6px;
+}
+
+
+
+/* ....................................................................................................................................... */
+.content{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+     
+}
+
+.content p{
+    margin-top: 50px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.summery_skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+
+.content figure img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Experience_CV figure{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience{
+    max-width: 70%;
+    margin-bottom: 50px;
+    padding: 10px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+main{
+    margin-top: 50px;
+
+}
+
+
+table {
+    border-collapse: collapse; 
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 1px solid white;
+    padding: 8px;
+  }
+
+  .summery_skills{
+    margin-bottom: 50px;
+  }
+
+  h3{
+    margin-top: 25px ;
+    margin-bottom: 25px ;
+  }
+
+/* ......................................................................................................................................... */
+
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 16px;
+}
+
+
+footer{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links{
+    margin-bottom: 4px;
+}
+
+
+
+.Experience_CV figure button{
+    width: 130px;
+    padding:  6px 6px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #00FFFF;
+    margin-top: 20px;
+}
+
+.Experience_CV figure figcaption{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-end;
+}
+
+
+.Experience_CV figure button a{
+    text-decoration: none;
+    color:black;
+    
+
+}
+
+
+
+
+@media (min-width: 576px)  {
+
+    body{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+   
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .burger {
+        display: none;
+    }
+   
+
+    
+   
+    
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+
+    footer .links{
+        order: 2;
+
+    }
+
+    footer p{
+        order: 1;
+
+    }
+
+    .menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        width: fit-content;
+        position: static;
+        top: auto;       
+        left: auto;
+        right: auto;
+        bottom: auto;
+        box-shadow:0 4px 6px rgba(0, 0, 0, 0.1) ;
+    }
+
+    
+
+    .menu li a{
+        color: white;
+    }
+
+    .menu li {
+        
+        width: fit-content;
+        
+        padding: 0;
+        margin: 10px;
+        
+    }
+  }
+
+
+  @media (min-width: 769px) {
+
+   
+    header {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  
+    .burger {
+        display: none;
+    }
+
+    .content{
+        display: flex ;
+        flex-direction: row;
+        gap: 50px;  
+    }
+    
+    .summery_skills{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        gap: 70px;
+        
+    }
+
+    .summery{
+        width: 50%;
+    }
+    
+    .content figure img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .content{
+        align-items: flex-start;
+         
+    }
+    
+    .content p{
+        margin-top: 50px;
+    }
+
+    .Experience_CV figure {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Experience_CV figure img{
+        width: 70%;
+        
+    }
+
+    .Experience_CV figure {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    
+
+    .Experience_CV{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }    
+
+
+    
+
+  }
+
+  @media (min-width: 1024px){
+    body{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    
+
+    
+  }
+
+
+
+
+
+
+
+
+

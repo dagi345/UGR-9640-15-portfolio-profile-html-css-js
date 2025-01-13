@@ -4,111 +4,138 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS/portfolio.css">
   </head>
   <body>
     <header>
       <div class="header">
-        <h2>Dagim Abate</h2>
-        <nav>
-          <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./aboutme.html">About</a></li>
-            <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="./CV.html">CV</a></li>
-            <li><a href="./contactme.html">Contact</a></li>
+        
+        <h2 class="name">Dagim Abate</h2>
+
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="menu">
+            <li class="home"><a href="./home.html"> Home </a></li>
+            <li class="about"><a href="./aboutme.html"> About </a></li>
+            <li class="portfolio"><a href="./portfolio.html"> Portfolio </a></li>
+            <li class="cv"><a href="./CV.html"> CV </a></li>
+            <li class="contact"><a href="./contactme.html"> Contact </a></li>
           </ul>
-        </nav>
+
+        
       </div>
     </header>
 
     <main>
-      <section>
-        <h2>PROJECTS</h2>
-      </section>
+      
+      <h2>PROJECTS</h2>
+      
 
-      <section class="front-end">
+      <section class="frontEnd">
         <h3>Front end projects</h3>
-        <figure>
-          <video src="./images/videos/Perfumes.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Perfumes.mp4">Download the video</a>.
-          </video>
-          <figcaption>A classic Perfume showcasing Website.</figcaption>
-        </figure>
+        <div class="frontEndProjects">
+          <figure>
+            <video src="./videos/Netflix_clone.mp4" muted autoplay>
+              Your browser does not support the video tag.
+              
+            </video>
+            <figcaption>A Netflix Clone web app , that shows trailers for every movie shown </figcaption>
+            
+            <a href="https://netflixclone-6d87b.web.app/" target="_blank"><button>View site</button></a>
+          </figure>
+          
+          <figure>
+            <video src="./videos/Note-Taking-app.mp4" muted   autoplay>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>
+              A note-taking web app that allows editing and deleting notes.
+            </figcaption>
+            <a href="https://dagi345.github.io/dagisNotes/"  target="_blank"><button>View site</button></a>
+          </figure>
+  
+          <figure>
+            <video src="./videos/Perfumes.mp4" muted  autoplay>
+              Your browser does not support the video tag.
+              
+            </video>
+            <figcaption>A classic perfume showcasing website </figcaption>
+            <a href=""  target="_blank"><button>View site</button></a>
 
-        <figure>
-          <video src="./images/videos/Dice-Game.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Dice-Game.mp4">Download the video</a>.
-          </video>
-          <figcaption>Dice Game, that shows which player Won Live.</figcaption>
-        </figure>
+          </figure>
+  
+  
+          
+  
+          <figure>
+            <video src="./videos/Dice-Game.mp4" muted  autoplay>
+              Your browser does not support the video tag.
+              
+            </video>
+            <figcaption>
+              Dice Game, that shows which player Won Live.
+            </figcaption>
+            <a href=" https://dagi345.github.io/dicegame/"  target="_blank"><button>View site</button></a>
 
-        <figure>
-          <video src="./images/videos/Note-Taking-app.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Note-Taking-app.mp4">Download the video</a
-            >.
-          </video>
-          <figcaption>
-            A note-taking web app that allows editing and deleting notes.
-          </figcaption>
-        </figure>
+  
+          </figure>
+  
+          <figure>
+            <video src="./videos/Menu-Project.mp4" muted  autoplay>
+              Your browser does not support the video tag.
+              
+            </video>
+            <figcaption>
+              A menu listing website where different food items are categorized
+              and filtered by their type.
+            </figcaption>
+            <a href=""  target="_blank"><button>View site</button></a>
 
-        <figure>
-          <video src="./images/videos/Grocery-Bud.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Grocery-Bud.mp4">Download the video</a>.
-          </video>
-          <figcaption>
-            A grocery list tracking app where you can edit and delete grocery
-            list items.
-          </figcaption>
-        </figure>
+          </figure>
 
-        <figure>
-          <video src="./images/videos/Emersive-Learning.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Emersive-Learning.mp4"
-              >Download the video</a
-            >.
-          </video>
-          <figcaption>
-            A website entirely built using Bootstrap (a CSS framework).
-          </figcaption>
-        </figure>
+          <figure>
+            <video src="./videos/Emersive-Learning.mp4" muted  autoplay>
+              Your browser does not support the video tag.
+              
+            </video>
+            <figcaption>
+              A website entirely built using Bootstrap (a CSS framework).
+            </figcaption>
+            <a href="https://dagi345.github.io/emersive-learning-/"  target="_blank"><button>View site</button></a>
 
-        <figure>
-          <video src="./images/videos/Menu-Project.mp4" muted>
-            Your browser does not support the video tag.
-            <a href="./images/videos/Menu-Project.mp4">Download the video</a>.
-          </video>
-          <figcaption>
-            A menu listing website where different food items are categorized
-            and filtered by their type.
-          </figcaption>
-        </figure>
+          </figure>
+        </div>
+
       </section>
 
-      <section class="back-end">
+      <section class="backEnd">
         <h3>Back end Projects</h3>
-        <figure>
-          <img src="./images/random-joke.png" alt="an image of a    project" >
-          <figcaption>random joke generator website practicing api concepts</figcaption>
-        </figure>
 
-        <figure>
-          <img src="./images/Manage-magic.png" alt="an image of a    project" >
-          <figcaption>Manage magic a simple product managment system , practicing database CRUD operations</figcaption>
-        </figure>
+        <div class="backEndProjects">
+          <figure>
+            <img src="./images/random-joke.png" alt="an image of a    project" >
+            <figcaption>random joke generator website practicing api concepts</figcaption>
+            <a href=""  target="_blank"><button>View site</button></a>
 
-        <figure>
-          <img
-            src="./images/Authentication.png"
-            alt="an image of a project"
-          >
-          <figcaption>Amazon clone website</figcaption>
-        </figure>
+          </figure>
+  
+          <figure>
+            <img src="./images/Manage-magic.png" alt="an image of a    project" >
+            <figcaption>Manage magic a simple product managment system , practicing database CRUD operations</figcaption>
+            <a href=""  target="_blank"><button>View site</button></a>
+
+          </figure>
+  
+          <figure>
+            <img src="./images/amazon.png" alt="an image of an amazon website project">
+            <figcaption>Amazon clone website</figcaption>  
+            <a href=""  target="_blank"><button>View site</button></a>
+          </figure>
+        </div>
       </section>
     </main>
 
@@ -125,10 +152,9 @@
       <p>All rights reserved to Dagim Abate © 2024</p>
     </footer>
 
-    <audio id="clickSound">
-      <source src="./audio/sound-1-167181.mp3" type="audio/mpeg" >
-      Your browser does not support the audio element.
-    </audio>
+    
+
+    <script src="./JS/script.js"></script>
 
   </body>
 </html>

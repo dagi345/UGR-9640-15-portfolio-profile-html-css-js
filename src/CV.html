@@ -4,26 +4,34 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Document</title>
+    <link rel="stylesheet" href="./CSS/CV.css">
   </head>
   <body>
     <header>
       <div class="header">
-        <h2>Dagim Abate</h2>
+        
+        <h2 class="name">Dagim Abate</h2>
 
-        <nav>
-          <ul>
-            <li><a href="./home.html"> Home </a></li>
-            <li><a href="./aboutme.html"> About </a></li>
-            <li><a href="./portfolio.html"> Portfolio </a></li>
-            <li><a href="./CV.html"> CV </a></li>
-            <li><a href="./contactme.html"> Contact </a></li>
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <ul class="menu">
+            <li class="home"><a href="./home.html"> Home </a></li>
+            <li class="about"><a href="./aboutme.html"> About </a></li>
+            <li class="portfolio"><a href="./portfolio.html"> Portfolio </a></li>
+            <li class="cv"><a href="./CV.html"> CV </a></li>
+            <li class="contact"><a href="./contactme.html"> Contact </a></li>
           </ul>
-        </nav>
+
+        
       </div>
     </header>
 
     <main>
-      <h2>My CV</h2>
+      
       <div class="content">
         <figure>
           <img src="./images/Me.png" alt="photo of Dagim abate , a web developer" >
@@ -42,103 +50,107 @@
         </p>
       </div>
       
-      <div class="summery">
-        <h3>Summery of Resume</h3>
-
-        <ul>
-          <li>
-            <p>
-              Full Stack Web Developer with strong technical expertise in
-              front-end and back-end technologies
-            </p>
-          </li>
-          <li>
-            <p>
-              Graduated from AAIT (Addis Ababa Institute of Technology), one of
-              the top institutions in the country, with a solid foundation in
-              software engineering.
-            </p>
-          </li>
-          <li>
-            <p>
-              Proven track record in developing dynamic, responsive, and
-              high-performance websites.
-            </p>
-          </li>
-          <li>
-            <p>
-              Expertise in HTML, CSS, JavaScript, React, Node.js, and Databases
-              (MySQL, MongoDB).
-            </p>
-          </li>
-          <li>
-            <p>
-              Passionate about problem-solving, innovation, and delivering
-              high-quality solutions tailored to client needs.
-            </p>
-          </li>
-        </ul>
+      <div class="summery_skills">
+        <div class="summery">
+          <h3>Summery of Resume</h3>
+  
+          <ul>
+            <li>
+              <p>
+                Full Stack Web Developer with strong technical expertise in
+                front-end and back-end technologies
+              </p>
+            </li>
+            <li>
+              <p>
+                Graduated from AAIT (Addis Ababa Institute of Technology), one of
+                the top institutions in the country, with a solid foundation in
+                software engineering.
+              </p>
+            </li>
+            <li>
+              <p>
+                Proven track record in developing dynamic, responsive, and
+                high-performance websites.
+              </p>
+            </li>
+            <li>
+              <p>
+                Expertise in HTML, CSS, JavaScript, React, Node.js, and Databases
+                (MySQL, MongoDB).
+              </p>
+            </li>
+            <li>
+              <p>
+                Passionate about problem-solving, innovation, and delivering
+                high-quality solutions tailored to client needs.
+              </p>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="Skills">
+          <h3>Skills List</h3>
+          <table>
+            <tr>
+              <th>Catagory</th>
+              <th>Skills</th>
+            </tr>
+            <tr>
+              <td>Front-End Development</td>
+              <td>HTML, CSS, JavaScript, React, Bootstrap</td>
+            </tr>
+            <tr>
+              <td>Back-End Development</td>
+              <td>Node.js, Express, MySQL, MongoDB</td>
+            </tr>
+            <tr>
+              <td>Version Control</td>
+              <td>Git, GitHub</td>
+            </tr>
+            <tr>
+              <td>Tools & Technologies</td>
+              <td>Visual Studio Code, Postman, Firebase</td>
+            </tr>
+            <tr>
+              <td>Database Management</td>
+              <td>MySQL, MongoDB, SQL Queries</td>
+            </tr>
+            <tr>
+              <td>Additional Skills</td>
+              <td>Problem Solving, Agile Methodologies, Web Optimization</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
-      <div class="Skills">
-        <h3>Skills List</h3>
-        <table>
-          <tr>
-            <th>Catagory</th>
-            <th>Skills</th>
-          </tr>
-          <tr>
-            <td>Front-End Development</td>
-            <td>HTML, CSS, JavaScript, React, Bootstrap</td>
-          </tr>
-          <tr>
-            <td>Back-End Development</td>
-            <td>Node.js, Express, MySQL, MongoDB</td>
-          </tr>
-          <tr>
-            <td>Version Control</td>
-            <td>Git, GitHub</td>
-          </tr>
-          <tr>
-            <td>Tools & Technologies</td>
-            <td>Visual Studio Code, Postman, Firebase</td>
-          </tr>
-          <tr>
-            <td>Database Management</td>
-            <td>MySQL, MongoDB, SQL Queries</td>
-          </tr>
-          <tr>
-            <td>Additional Skills</td>
-            <td>Problem Solving, Agile Methodologies, Web Optimization</td>
-          </tr>
-        </table>
+      <div class="Experience_CV">
+        <div class="experience">
+          <h3>Experience</h3>
+          <ul>
+            <li>
+              <p>Freelance Web Developer</p>
+              <p>
+                Designed and developed websites for various clients, ensuring
+                responsive design and optimized performance.
+              </p>
+            </li>
+            <li>
+              <p>Projects</p>
+              <p>
+                Built multiple full-stack applications, including a task
+                management app, e-commerce platform, and product management
+                software.
+              </p>
+            </li>
+          </ul>
+        </div>
+  
+        <figure>
+          <img src="./images/CV.png" alt="an image of The CV" >
+          <figcaption><button><a href="/images/CV.png" download="CV.png">Download CV</a></button></figcaption>
+        </figure>
       </div>
-
-      <div class="experience">
-        <h3>Experience</h3>
-        <ul>
-          <li>
-            <p>Freelance Web Developer</p>
-            <p>
-              Designed and developed websites for various clients, ensuring
-              responsive design and optimized performance.
-            </p>
-          </li>
-          <li>
-            <p>Projects</p>
-            <p>
-              Built multiple full-stack applications, including a task
-              management app, e-commerce platform, and product management
-              software.
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <figure>
-        <img src="./images/" alt="an image of The CV" >
-        <figcaption><a href="/">Download as a PDF</a></figcaption>
-      </figure>
     </main>
 
     <footer>
@@ -154,9 +166,6 @@
       <p>All rights reserved to dagim abate ©️ 2024</p>
     </footer>
 
-    <audio id="clickSound">
-      <source src="./audio/sound-1-167181.mp3" type="audio/mpeg" >
-      Your browser does not support the audio element.
-    </audio>
+    <script src="./JS/script.js"></script>
   </body>
 </html>

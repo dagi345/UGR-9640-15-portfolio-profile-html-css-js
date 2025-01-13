@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #031341;
+    color: white;
+    margin: 16px;
+}
+
+/* header sections css */
+
+.name{
+    font-size: 20pt;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    margin-top: 50px;
+}
+
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    padding: 0px;
+    
+    border-bottom: 2px solid #94aeae;
+    
+}
+
+
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger span{
+display: block;
+height: 4px;
+background: white;
+border-radius: 5px;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1) ;
+}
+
+.menu li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menu li a{
+    color:black;
+    text-decoration: none;
+    margin-bottom: 5px;
+
+}
+
+.menu li:hover{
+    text-decoration: underline 1px white;
+    text-underline-offset: 6px;
+    
+}
+
+.portfolio{
+    text-decoration: underline 1px white;
+    text-underline-offset: 6px;
+}
+
+.menu.show{
+    display: flex;
+}
+
+
+h2{
+    font-size: 48px;
+}
+
+
+.backEnd h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.frontEnd h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* main section */
+.frontEnd figure video{
+    width:100%;
+}
+
+.frontEnd figure {
+   margin-bottom:40px;
+   width:100%;
+}
+
+.frontEnd figure figcaption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+ .backEnd figure figcaption {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+
+.frontEndProjects{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10%;
+}
+
+button{
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 32px;
+    background-color: #00FFFF;
+    border-radius: 4px;
+}
+
+
+.backEndProjects figure {
+    width: 100%;
+    margin-bottom:40px;
+}
+
+.backEndProjects figure img{
+    width: 100%;
+}
+
+.backEndProjects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+
+
+
+
+
+/* Footer sections css */
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    gap: 16px;
+}
+
+footer{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links{
+    margin-bottom: 4px;
+}
+
+/* media queries for responsiveness */
+
+
+
+
+
+@media (min-width: 576px){
+
+    body{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    
+    main{
+        margin-top: 70px;
+    }
+
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .burger {
+        display: none;
+    }
+    
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline; 
+    }
+
+    footer .links{
+        order: 2;
+    }
+
+    footer p{
+        order: 1;
+    }
+
+    .menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        
+        flex-direction: row;
+        background-color: transparent;
+        width: fit-content;
+        position: static;
+        top: auto;       
+        left: auto;
+        right: auto;
+        bottom: auto;
+        box-shadow:0 4px 6px rgba(0, 0, 0, 0.1) ;
+    }
+
+    
+
+    .menu li a{
+        color: white;
+    }
+
+    .menu li {
+        
+        width: fit-content;
+        
+        padding: 0;
+        margin: 10px;
+        
+    } 
+
+   
+
+  }
+
+
+  @media (min-width: 769px) {
+
+   
+    header {
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  
+    .burger {
+        display: none;
+    }
+
+    .frontEndProjects figure {
+        width: 45%;
+        
+    }
+
+    .backEndProjects figure {
+        width: 45%;
+        
+    }
+    
+  }
+
+
+
+  @media (min-width: 1024px){
+    body{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+  }
+
+
+
+
+
+
+
+
+
